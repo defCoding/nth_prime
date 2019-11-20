@@ -1,0 +1,3 @@
+# nth Prime
+
+A short script I wrote to determine the nth prime. I wanted to write something faster than the naive implementation that runs in O(n^(5/2)) time. After doing a bit of research, I found something that would work for me, namely, the Sieve of Eratosthenes. However, if I were to use the Sieve of Eratosthenes for large n, the space complexity would be far too large. To counter this, I learned about segmented sieves, and implemented a segmented sieve instead. In addition, since I was only calculating the nth prime, I did not need to calculate every prime. I found a suitable limit to stop counting,
